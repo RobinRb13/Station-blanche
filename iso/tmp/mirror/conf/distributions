@@ -1,8 +1,8 @@
-Codename: stretch
+Codename: bookworm
 Architectures: amd64
 Components: main
 UDebComponents: main
-Description: mirror for stretch
+Description: mirror for bookworm
 Update: default default-base default-udebs default-base-security default-security default-base-updates default-updates
 Suite: stable
 
