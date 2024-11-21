@@ -1,9 +1,9 @@
 Suite: stable
-Codename: stretch
-Date: Thu, 20 Jun 2019 10:57:16 UTC
+Codename: bookworm
+Date: Thu, 20 Jun 2023 10:57:16 UTC
 Architectures: amd64
 Components: main
-Description: mirror for stretch
+Description: mirror for bookworm
 MD5Sum:
  61b8f116ed819cb75a5fb2de9d55eda8 948466 main/binary-amd64/Packages
  db5f73368c5908ce6241c0fdcfe3a963 280229 main/binary-amd64/Packages.gz
