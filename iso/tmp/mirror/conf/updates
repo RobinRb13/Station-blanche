@@ -1,54 +1,61 @@
 Name: default
-Suite: *
+Suite: bookworm
 Architectures: amd64
-UDebComponents: 
+UDebComponents: main
+Components: main
 Method: http://deb.debian.org/debian/
 FilterList: deinstall package-list
 VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
 
 Name: default-base
-Suite: *
+Suite: bookworm
 Architectures: amd64
-UDebComponents: 
+UDebComponents: main
+Components: main
 Method: http://deb.debian.org/debian/
 FilterFormula: priority (== required) | priority (== important) | priority (== standard)
 VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
 
 Name: default-udebs
-Suite: *
+Suite: bookworm
 Architectures: amd64
-Components: 
+Components: main
+UDebComponents: main
 Method: http://deb.debian.org/debian/
-VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
+VerifyRelease: B884D4462695F5513CBF06F951817B71F5D8402495C91F5F0F873B24A7856D9C
 
 Name: default-base-security
-Suite: */updates
+Suite: bookworm-security
 Architectures: amd64
-UDebComponents: 
+UDebComponents: main
+Components: main
 Method: http://security.debian.org/
 FilterFormula: priority (== required) | priority (== important) | priority (== standard)
 VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
 
 Name: default-security
-Suite: */updates
-Architectures: amd64
-UDebComponents: 
-Method: http://security.debian.org/
-FilterList: deinstall package-list
-VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
-
-Name: default-base-updates
-Suite: stretch-updates
+Suite: bookworm-security
 Architectures: amd64
 UDebComponents: main
+Components: main
+Method: http://security.debian.org/
+FilterList: deinstall package-list
+VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50 
+
+Name: default-base-updates
+Suite: bookworm-updates
+Architectures: amd64
+UDebComponents: main
+Components: main
 Method: http://deb.debian.org/debian/
 FilterFormula: priority (== required) | priority (== important) | priority (== standard)
 VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
 
 Name: default-updates
-Suite: stretch-updates
+Suite: bookworm-updates
 Architectures: amd64
 UDebComponents: main
+Components: main
 Method: http://deb.debian.org/debian/
 FilterList: deinstall package-list
 VerifyRelease: 8B48AD6246925553|CBF8D6FD518E17E1|7638D0442B90D010|9D6D8F6BC857C906|EF0F382A1A7B6500|E0B11894F66AEC98|04EE7237B7D453EC|EDA0D2388AE22BA9|AA8E81B4331F7F50
